@@ -1,20 +1,21 @@
 {
-  "name": "electron-app-template",
+  "name": "electron-calculator",
   "version": "1.0.0",
-  "description": "A template repo for a blank Electron application",
+  "description": "A calculator application written with NodeJS and Electron",
   "keywords": [
     "electron",
     "nodejs",
     "javascript",
-    "electron-app"
+    "electron-app",
+	"calculator"
   ],
-  "homepage": "https://github.com/cheesits456/Electron-App-Template#readme",
+  "homepage": "https://github.com/cheesits456/Electron-Calculator#readme",
   "bugs": {
-    "url": "https://github.com/cheesits456/Electron-App-Template/issues"
+    "url": "https://github.com/cheesits456/Electron-Calculator/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cheesits456/Electron-App-Template.git"
+    "url": "git+https://github.com/cheesits456/Electron-Calculator.git"
   },
   "license": "GPL-3.0",
   "author": "cheesits456",
