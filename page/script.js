@@ -41,7 +41,14 @@ function equate() {
 		.replace(/×/g, "*")
 		.replace(/−/g, "-");
 
-	equationElement.value = math.evaluate(equation);
+	try {
+		equationElement.value = math.evaluate(equation);
+	} catch (error) {
+		document.getElementById("error-title").innerHTML = error.name;
+		document.getElementById("error-text").innerHTML = error.message;
+		$("#modal").modal("toggle");
+		console.log(error.message);
+	}
 	equationElement.focus();
 };
 
