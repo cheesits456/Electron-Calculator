@@ -5,7 +5,7 @@ const equationElement = document.getElementById("equation");
 equationElement.focus();
 
 document.addEventListener("keydown", async event => {
-	switch(event.key) {
+	switch (event.key) {
 		case "Enter":
 			equate();
 			break;
