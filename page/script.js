@@ -13,6 +13,12 @@ document.addEventListener("keydown", async event => {
 			clearInput();
 			break;
 	}
+	await setTimeout(() => {
+		equationElement.value = equationElement.value
+			.replace(/\//g, "÷")
+			.replace(/\*/g, "×")
+			.replace(/-/g, "−");
+	}, 1);
 });
 
 
