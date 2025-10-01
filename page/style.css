@@ -5,3 +5,26 @@
 .margin-top {
 	margin-top: 1rem;
 }
+
+
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--bs-secondary-bg);
+	font-size: 20pt;
+	padding: 0.5rem;
+	border-radius: 0.3rem;
+	height: 5rem;
+	box-shadow: 5px 5px 0 0 #000000cc;
+}
+
+.button:hover {
+	cursor: pointer;
+	border: 1px solid black
+}
+
+.button:active {
+	box-shadow: inset 5px 5px 0 0 #000000cc;
+}
