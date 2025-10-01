@@ -5,6 +5,13 @@ function clearInput() {
 
 
 
+function deleteLastCharacter() {
+	equationElement.value = equationElement.value.substr(0, equationElement.value.length - 1);
+	equationElement.focus();
+};
+
+
+
 function focusInput() {
 	equationElement.focus();
 };
