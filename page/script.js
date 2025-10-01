@@ -31,11 +31,9 @@ function clearInput() {
 
 
 function deleteLastCharacter() {
-	equationElement.value = equationElement.value.substr(0, equationElement.value.length - 1);
+	equationElement.value = equationElement.value.substring(0, equationElement.value.length - 1);
 	equationElement.focus();
 };
-
-
 
 function equate() {
 	const equation = equationElement.value
