@@ -35,3 +35,10 @@ function equate() {
 function focusInput() {
 	equationElement.focus();
 };
+
+
+
+function type(char) {
+	equationElement.value += char;
+	equationElement.focus();
+};
