@@ -1,3 +1,9 @@
+const equationElement = document.getElementById("equation");
+
+equationElement.focus();
+
+
+
 function clearInput() {
 	equationElement.value = "";
 	equationElement.focus();
