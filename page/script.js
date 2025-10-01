@@ -4,7 +4,7 @@ const equationElement = document.getElementById("equation");
 
 equationElement.focus();
 
-document.addEventListener("keydown", async event => {
+document.addEventListener("keydown", event => {
 	switch (event.key) {
 		case "Enter":
 			equate();
@@ -12,8 +12,8 @@ document.addEventListener("keydown", async event => {
 		case "Escape":
 			clearInput();
 			break;
-	}
-	await setTimeout(() => {
+	};
+	setTimeout(() => {
 		equationElement.value = equationElement.value
 			.replace(/\//g, "÷")
 			.replace(/\*/g, "×")
