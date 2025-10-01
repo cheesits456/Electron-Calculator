@@ -6,11 +6,11 @@ function createWindow() {
 
 	const window = new electron.BrowserWindow({
 		width: 400,
-		height: 570,
+		height: 590,
 		maxWidth: 400,
-		maxHeight: 570,
+		maxHeight: 590,
 		minWidth: 400,
-		minHeight: 570,
+		minHeight: 590,
 		icon: path.join(__dirname, "icon", "icon.png"),
 		webPreferences: {
 			contextIsolation: false,

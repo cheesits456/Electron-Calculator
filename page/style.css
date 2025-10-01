@@ -1,3 +1,10 @@
+@font-face {
+  font-family: DigitalMono;
+  src: url(./DigitalMono.ttf); /* url of the font */
+}
+
+
+
 .align-right {
 	text-align: right;
 }
@@ -34,6 +41,10 @@
 	background-color: var(--bs-secondary-bg);
 	border: 3px solid #00000066;
 	border-radius: 0.75rem;
+	font-family: DigitalMono;
+	font-size: 30pt;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 .equation:focus {
