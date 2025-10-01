@@ -4,6 +4,17 @@ const equationElement = document.getElementById("equation");
 
 equationElement.focus();
 
+document.addEventListener("keydown", async event => {
+	switch(event.key) {
+		case "Enter":
+			equate();
+			break;
+		case "Escape":
+			clearInput();
+			break;
+	}
+});
+
 
 
 function clearInput() {
