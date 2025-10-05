@@ -31,6 +31,7 @@
     "electron-packager": "^17.1.2"
   },
   "dependencies": {
+    "electron-localshortcut": "^3.2.1",
     "mathjs": "^14.8.1"
   }
 }
