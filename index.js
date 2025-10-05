@@ -1,6 +1,11 @@
+const fs = require("fs");
 const path = require("path");
 
 const electron = require("electron");
+const electronLocalshortcut = require("electron-localshortcut");
+
+let cssKey = "";
+let font = "digital";
 
 function createWindow() {
 
@@ -21,6 +26,23 @@ function createWindow() {
 
 	window.removeMenu();
 	window.loadFile(path.join("page", "index.html"));
+
+	electronLocalshortcut.register(window, 'Ctrl+F', () => {
+		if (font === "digital") {
+			font = "normal";
+			window.webContents.insertCSS(`
+				.equation {
+					font-family: inherit !important;
+					font-size: 30pt !important;
+					padding-top: 8px !important;
+					padding-bottom: 8px !important;
+				}
+			`).then(key => { cssKey = key });
+		} else {
+			font = "digital";
+			window.webContents.removeInsertedCSS(cssKey);
+		}
+	});
 }
 
 electron.app.whenReady().then(createWindow);
